@@ -15,3 +15,16 @@ Acceptance Criteria:
 3: As a user, I should have access to a comprehensive database of organized, premade exercises; this would make the process of creating workout plans much more efficient. 
 Acceptance Criteria:
 
+
+
+Zach
+–-
+
+1: As a user, I want to be able to select an option to automatically increment the sets or reps for my workouts each week.
+Acceptance Criteria:
+
+2: As a user, I want to have access to preset schedule templates as well as the option to create custom schedules with any workouts.
+Acceptance Criteria:
+
+3: As a user, I should have an interactive schedule displaying each day of the week for a specified number of weeks, allowing me to add and organize my workouts. 
+Acceptance Criteria:
