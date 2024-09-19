@@ -43,7 +43,7 @@ Rafael
 1: As a previous user, I want to log in to my account, so that I can see my profile and delete my account.
 - Starting at the login screen user can type:
  - Username
- * Password
+ - Password
 - Login and be able to click an area to access my profile and see:
  - Button for Delete Account
  - Stats for user
