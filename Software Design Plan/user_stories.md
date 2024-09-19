@@ -5,6 +5,12 @@ Acceptance Criteria:
 1. Exercises should be created through a template with relevant fields
   * Exercise name
   * Target muscle group
+2. The exercise should be stored in the database and accessed the same as all other exercises
+* Exercise is displayed among other options for the target muscle group
+* Exercise is offered as an option in automatically created templates
+3. After creation of custom exercises, it should be possible to edit them at a later time
+* Ability to alter name or muscle group fields
+* Ability to delete custom exercises 
 
 
 2: As a user, I want to alter my sets and reps during my working; proving me with flexibility if changes from my plan are necessary.
