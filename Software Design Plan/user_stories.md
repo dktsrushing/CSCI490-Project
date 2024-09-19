@@ -21,7 +21,7 @@ Acceptance Criteria:
 Acceptance Criteria:
 
 
-(Difficulty - 3 As a user, I should have access to a comprehensive database of organized, premade exercises; this would make the process of creating workout plans much more efficient. 
+(Difficulty - 3): As a user, I should have access to a comprehensive database of organized, premade exercises; this would make the process of creating workout plans much more efficient. 
 Acceptance Criteria:
 
 
