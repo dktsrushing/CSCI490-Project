@@ -41,12 +41,12 @@ Acceptance Criteria:
 Rafael
 --
 1: As a previous user, I want to log in to my account, so that I can see my profile and delete my account.
-* Starting at the login screen user can type:
- * Username
+- Starting at the login screen user can type:
+ - Username
  * Password
-* Login and be able to click an area to access my profile and see:
- * Button for Delete Account
- * Stats for user
+- Login and be able to click an area to access my profile and see:
+ - Button for Delete Account
+ - Stats for user
  * Login info (Hidden/Un-hidden)
 * Able to click the delete button and confirmation for deleting the user account:
  * Return to the login screen and user data is deleted
