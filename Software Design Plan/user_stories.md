@@ -40,7 +40,7 @@ Acceptance Criteria:
 
 Rafael
 --
-1: As a previous user, I want to log in to my account, so that I can see my profile and delete my account.
+Difficulty-1: As a previous user, I want to log in to my account, so that I can see my profile and delete my account.
 * Starting at the login screen user can type:
     * Username.
     * Password.
@@ -52,7 +52,7 @@ Rafael
     * Return to the login screen and user data is deleted.
 * The user cannot log in with a previous account.
 
-2: As a new user, I want to create an account, so that I can access it.
+Difficulty-2: As a new user, I want to create an account, so that I can access it.
 * Starting at the login screen user can type:
     * Username.
     * Password.
@@ -70,7 +70,7 @@ Rafael
     * Stats for user.
     * Login info (Hidden/Un-hidden).
 
-3: As a new user, I want to create an account, so that I can edit information and login with new info.
+Difficulty-3: As a new user, I want to create an account, so that I can edit information and login with new info.
 * Starting at the login screen user can type:
     * Username.
     * Password.
