@@ -70,17 +70,8 @@ Difficulty-2: As a new user, I want to create an account, so that I can access i
     * Stats for user.
     * Login info (Hidden/Un-hidden).
 
-Difficulty-3: As a new user, I want to create an account, so that I can edit information and login with new info.
+Difficulty-3: As a user, I want to login, so that I can edit information and login with new info.
 * Starting at the login screen user can type:
-    * Username.
-    * Password.
-* The user creates an account by:
-    * Clicking the Create Account button.
-* Transfer the user to the Create Account screen where they have to input:
-    * Username.
-    * Password.
-    * Password Confirmation.
-* After completing Creation of User Account, takes you to the login screen where they input:
     * Username.
     * Password.
 * Login and be able to click an area to access my profile and see:
