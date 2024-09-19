@@ -1,0 +1,13 @@
+1. Identify
+
+2. Plan
+
+3. Design
+
+4. Build 
+
+5. Test
+
+6. Deploy
+
+7. Maintain
