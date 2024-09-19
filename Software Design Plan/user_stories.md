@@ -41,62 +41,62 @@ Acceptance Criteria:
 Rafael
 --
 1: As a previous user, I want to log in to my account, so that I can see my profile and delete my account.
-Starting at the login screen user can type:
-* Username.
-* Password.
-Login and be able to click an area to access my profile and see:
-* Button for Delete Account.
-* Stats for user.
-* Login info (Hidden/Un-hidden).
-Able to click the delete button and confirmation for deleting the user account:
-* Return to the login screen and user data is deleted.
-The user cannot log in with a previous account.
+* Starting at the login screen user can type:
+    * Username.
+    * Password.
+* Login and be able to click an area to access my profile and see:
+    * Button for Delete Account.
+    * Stats for user.
+    * Login info (Hidden/Un-hidden).
+* Able to click the delete button and confirmation for deleting the user account:
+    * Return to the login screen and user data is deleted.
+* The user cannot log in with a previous account.
 
 2: As a new user, I want to create an account, so that I can access it.
-Starting at the login screen user can type:
-* Username.
-* Password.
-The user creates an account by:
-* Clicking the Create Account button.
-Transfer the user to the Create Account screen where they have to input:
-* Username.
-* Password.
-* Password Confirmation.
-After completing Creation of User Account, takes you to the login screen where they input:
-* Username
-* Password.
-Login and be able to click an area to access my profile and see:
-* Button for Delete Account.
-* Stats for user.
-* Login info (Hidden/Un-hidden).
+* Starting at the login screen user can type:
+    * Username.
+    * Password.
+* The user creates an account by:
+    * Clicking the Create Account button.
+* Transfer the user to the Create Account screen where they have to input:
+    * Username.
+    * Password.
+    * Password Confirmation.
+* After completing Creation of User Account, takes you to the login screen where they input:
+    * Username
+    * Password.
+* Login and be able to click an area to access my profile and see:
+    * Button for Delete Account.
+    * Stats for user.
+    * Login info (Hidden/Un-hidden).
 
 3: As a new user, I want to create an account, so that I can edit information and login with new info.
-Starting at the login screen user can type:
-* Username.
-* Password.
-The user creates an account by:
-* Clicking the Create Account button.
-Transfer the user to the Create Account screen where they have to input:
-* Username.
-* Password.
-* Password Confirmation.
-After completing Creation of User Account, takes you to the login screen where they input:
-* Username.
-* Password.
-Login and be able to click an area to access my profile and see:
-* Button for Delete Account.
-* Stats for user.
-* Login info (Hidden/Un-hidden).
-* Edit Info.
-Click edit and take them to a page where the user can decide between editing:
-* Username.
-* Password.
-They decide on one of them and take them to the edit page corresponding to each one previously mentioned.
-Once they edit they will need to log in depending on what they changed with:
-* New/Old Username.
-* New/Old Password.
-Login and be able to click an area to access my profile and see:
-* Button for Delete Account.
-* Stats for user.
-* New Login info (Hidden/Un-hidden).
-* Edit Info.
+* Starting at the login screen user can type:
+    * Username.
+    * Password.
+* The user creates an account by:
+    * Clicking the Create Account button.
+* Transfer the user to the Create Account screen where they have to input:
+    * Username.
+    * Password.
+    * Password Confirmation.
+* After completing Creation of User Account, takes you to the login screen where they input:
+    * Username.
+    * Password.
+* Login and be able to click an area to access my profile and see:
+    * Button for Delete Account.
+    * Stats for user.
+    * Login info (Hidden/Un-hidden).
+    * Edit Info.
+* Click edit and take them to a page where the user can decide between editing:
+    * Username.
+    * Password.
+* They decide on one of them and take them to the edit page corresponding to each one previously mentioned.
+* Once they edit they will need to log in depending on what they changed with:
+    * New/Old Username.
+    * New/Old Password.
+* Login and be able to click an area to access my profile and see:
+    * Button for Delete Account.
+    * Stats for user.
+    * New Login info (Hidden/Un-hidden).
+    * Edit Info.
