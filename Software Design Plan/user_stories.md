@@ -3,8 +3,8 @@ Tyler
 (Difficulty - 1): As a user, I am able to create custom exercises, and these exercises will be stored in the database so they can be easily accessed in the future.
 Acceptance Criteria:
 1. Exercises should be created through a template with relevant fields
-  * Exercise name
-  * Target muscle group
+* Exercise name
+* * Target muscle group
 2. The exercise should be stored in the database and accessed the same as all other exercises
 * Exercise is displayed among other options for the target muscle group
 * Exercise is offered as an option in automatically created templates
@@ -15,6 +15,17 @@ Acceptance Criteria:
 
 (Difficulty - 2): As a user, I want to alter my sets and reps during my working; proving me with flexibility if changes from my plan are necessary.
 Acceptance Criteria:
+1. Each exercise should have a dropdown menu with options
+* Add reps
+* Remove reps
+* Add sets
+* Remove sets
+2. Ability to swap exercises in the middle of a workout
+* Add exercise
+* Delete exercise
+3. Option to apply changes permanently 
+* If selected, that workout day in future weeks will reflect the same changes
+* If not selected, the changes will only apply to the current workout
 
 
 (Difficulty - 2): As a user, I want to enter my reps during my workout and have these permanently saved for viewing on my account; this allows me to track my progress from week to week and provides me with more information in designing my workouts.
