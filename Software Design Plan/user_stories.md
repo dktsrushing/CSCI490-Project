@@ -2,6 +2,9 @@ Tyler
 --
 1: As a user, I am able to create custom exercises, and these exercises will be stored in the database so they can be easily accessed in the future.
 Acceptance Criteria:
+1. Exercises should be created through a template with relevant fields
+* Exercise name
+* Target muscle group
 
 
 2: As a user, I want to alter my sets and reps during my working; proving me with flexibility if changes from my plan are necessary.
