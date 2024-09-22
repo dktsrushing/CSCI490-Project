@@ -40,14 +40,34 @@ Acceptance Criteria:
 Zach
 --
 
-1: As a user, I want to be able to select an option to automatically increment the sets or reps for my workouts each week.               
-Acceptance Criteria:
+(Difficulty - 1): As a user, I want to be able to select an option to automatically increment the sets or reps for my workouts each week.               
+Acceptance Criteria: 
+1. Button to increment workouts
+* increment weight, sets, or reps
+* automatically increments all workouts weekly until end of plan, can still be manually adjusted
 
-2: As a user, I want to have access to preset schedule templates as well as the option to create custom schedules with any workouts.
-Acceptance Criteria:
+(Difficulty - 2): As a user, I should have an interactive schedule displaying each day of the week for a specified number of weeks, allowing me to add and organize my workouts. 
 
-3: As a user, I should have an interactive schedule displaying each day of the week for a specified number of weeks, allowing me to add and organize my workouts. 
 Acceptance Criteria:
+1. General structure of schedule
+* A schedule similar to a calendar is displayed, including days of the week and space for planned workouts
+* Buttons/dropdowns to add exercises to indiviudual days of the week
+2. Variable size schedules
+*  a number of weeks for a workout plan can be designated and a schedule will be created with designated amount
+*  weeks can be added or removed
+
+(Difficulty - 3): As a user, I want to have access to preset schedule templates as well as the option to create custom schedules with any workouts.
+Acceptance Criteria:
+1. Database of preset workout schedules (splits)
+* database includes a few common schedules to act as templates
+* preset schedules automatically applied to all weeks in the plan
+2. Preset schedules can be modified to fit user needs
+* workout days can be swapped, changed, or removed
+3. Custom schedules can be created
+* a custom schedule can be created and duplicated to other weeks in the schedule
+* custom schedules can be synchronous or asynchronous
+
+
 
 Rafael
 --
