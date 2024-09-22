@@ -40,7 +40,8 @@ Acceptance Criteria:
 Zach
 --
 
-(Difficulty - 1): As a user, I want to be able to select an option to automatically increment the sets or reps for my workouts each week.               
+(Difficulty - 1): As a user, I want to be able to select an option to automatically increment the sets or reps for my workouts each week.  
+
 Acceptance Criteria: 
 1. Button to increment workouts
 * increment weight, sets, or reps
@@ -57,6 +58,7 @@ Acceptance Criteria:
 *  weeks can be added or removed
 
 (Difficulty - 3): As a user, I want to have access to preset schedule templates as well as the option to create custom schedules with any workouts.
+
 Acceptance Criteria:
 1. Database of preset workout schedules (splits)
 * database includes a few common schedules to act as templates
