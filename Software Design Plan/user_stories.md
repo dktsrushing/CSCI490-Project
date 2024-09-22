@@ -66,8 +66,9 @@ Acceptance Criteria:
 2. Preset schedules can be modified to fit user needs
 * workout days can be swapped, changed, or removed
 3. Custom schedules can be created
-* a custom schedule can be created and duplicated to other weeks in the schedule
 * custom schedules can be synchronous or asynchronous
+* synchronous custom schedule can be duplicated to other weeks in the schedule
+
 
 
 
