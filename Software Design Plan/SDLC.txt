@@ -24,3 +24,12 @@
 * If bugs are present after deployment, attempt to fix them quickly
 * Clean up any leftover testing data that may interefere with user experience
 * Add functionality as time permits
+
+
+
+
+
+
+
+
+
