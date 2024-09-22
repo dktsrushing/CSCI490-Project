@@ -40,7 +40,7 @@ Acceptance Criteria:
 Zach
 --
 
-(Difficulty - 1): As a user, I want to be able to select an option to automatically increment the sets or reps for my workouts each week.  
+(Difficulty - 1): As a user, I want to be able to select an option to automatically increment the difficulty of my workouts each week.  
 
 Acceptance Criteria: 
 1. Button to increment workouts
