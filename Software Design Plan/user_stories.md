@@ -29,6 +29,7 @@ Acceptance Criteria:
 
 
 (Difficulty - 2): As a user, I want to enter my reps during my workout and have these permanently saved for viewing on my account; this allows me to track my progress from week to week and provides me with more information in designing my workouts.
+
 Acceptance Criteria:
 1. Each set should a field for users to input their number of reps
 - If an incorrect number of reps is entered, the user should be able to edit the input
@@ -36,6 +37,7 @@ Acceptance Criteria:
 
 
 (Difficulty - 3): As a user, I should have access to a comprehensive database of organized, premade exercises; this would make the process of creating workout plans much more efficient. 
+
 Acceptance Criteria:
 1. Exercises organized by muscle group
 - User first selects muscle group, then exercise
