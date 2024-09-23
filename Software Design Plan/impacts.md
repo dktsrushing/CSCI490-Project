@@ -9,7 +9,7 @@ eliminates the struggles of training plan design and makes it easy to set, analy
 
 
 
-# H1 Impacts
+# Impacts
 
 Individuals
 --
