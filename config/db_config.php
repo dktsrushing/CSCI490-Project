@@ -1,9 +1,9 @@
 <?php
 // config/db_config.php
 $servername = 'localhost';
-$db_username = 'CSCI490FA24';
-$db_password = 'CSCI490Pass!';
-$db_name = 'CSCI490FA24';
+$db_username = 'root';
+$db_password = '';
+$db_name = 'csci490fa24';
 
 // Create connection
 $conn = new mysqli($servername, $db_username, $db_password, $db_name);

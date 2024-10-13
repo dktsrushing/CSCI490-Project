@@ -1,4 +1,3 @@
-<!-- frontend/profile.php -->
 <?php
 session_start();
 if (!isset($_SESSION['user_id'])) {
@@ -40,6 +39,7 @@ $conn->close();
         <input type="submit" value="Update Profile" />
     </form>
     <br />
-    <a href="dashboard.php">Back to Dashboard</a>
+    <a href="dashboard.php">Back to Dashboard</a> | 
+    <a href="../backend/logout.php">Logout</a>
 </body>
 </html>

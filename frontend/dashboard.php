@@ -1,4 +1,3 @@
-<!-- frontend/dashboard.php -->
 <?php
 session_start();
 if (!isset($_SESSION['user_id'])) {
@@ -18,6 +17,5 @@ if (!isset($_SESSION['user_id'])) {
         <a href="profile.php">Profile</a>
     </div>
     <h1>Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?>!</h1>
-    <!-- Rest of your dashboard content -->
 </body>
 </html>
