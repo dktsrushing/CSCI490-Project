@@ -24,6 +24,7 @@
   color: white;
 }
 
+
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +36,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+h1{
+  text-align: center;
 }

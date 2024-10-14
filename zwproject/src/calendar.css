@@ -1,0 +1,14 @@
+.dateNum{
+    width: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    text-align: left;
+    position: relative;
+    bottom: 65%;
+    left: 100%;
+}
+
+body{
+    background-color: rgb(74, 98, 118);
+}
+
