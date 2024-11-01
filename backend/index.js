@@ -1,13 +1,14 @@
+// app.js or index.js
 const express = require('express');
+const mongoose = require('./db/connection'); // Initialize MongoDB connection
+const exercisesRoute = require('./api/exercises');
+
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 
-const connection = require('./db/db');
+app.use(express.json());
+app.use('/api', exercisesRoute); // Use the exercises route under /api
 
-app.get('/', (req, res) => {
-    res.send('Hello World!');
-});
-
-app.listen(port, () => {
-    console.log(`App listening at http://localhost:${port}`);
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
 });
