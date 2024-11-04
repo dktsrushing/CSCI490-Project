@@ -1,7 +1,7 @@
 // db/connection.js
 const mongoose = require('mongoose');
 
-const uri = "mongodb+srv://software2projrtz:test123123@workoutdb.uoqlk.mongodb.net/?retryWrites=true&w=majority&appName=WorkoutDB";
+const uri = "mongodb+srv://software2projrtz:RTZproj@workoutdb.uoqlk.mongodb.net/?retryWrites=true&w=majority&appName=WorkoutDB";
 
 mongoose.connect(uri, {
     useNewUrlParser: true,
