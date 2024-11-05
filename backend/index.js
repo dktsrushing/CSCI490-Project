@@ -1,14 +1,18 @@
-// app.js or index.js
+// backend/index.js
 const express = require('express');
-const mongoose = require('./db/connection'); // Initialize MongoDB connection
+const mongoose = require('./db/connection'); // Database connection
 const exercisesRoute = require('./api/exercises');
+const workoutEntriesRoute = require('./api/workoutEntries');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
-app.use('/api', exercisesRoute); // Use the exercises route under /api
+app.use('/api', exercisesRoute);
+app.use('/api', workoutEntriesRoute);
 
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
+
+module.exports = { app, server }; // Export both the app and server instance
