@@ -46,9 +46,28 @@ const updateExercise = async (req, res) => {
     }
 };
 
+// Get exercises by muscle group
+const getExercisesByMuscleGroup = async (req, res) => {
+    const muscleGroup = req.params.muscleGroup; // Get muscle group from the request params
+    try {
+        // Fetch exercises from the database using the muscle group
+        const exercises = await Exercise.getByMuscleGroup(muscleGroup);
+        
+        // Log the exercises to the console (for testing purposes)
+        console.log(exercises);
+
+        // Send the exercises in the response
+        res.json(exercises);
+    } catch (error) {
+        console.error('Error fetching exercises:', error);
+        res.status(500).json({ error: 'Error fetching exercises' });
+    }
+};
+
 module.exports = {
     getExercises,
     createExercise,
     deleteExercise,
     updateExercise,
+    getExercisesByMuscleGroup,
 };

@@ -25,6 +25,10 @@ class Exercise {
     static async updateById(id, data) {
         return ExerciseModel.findByIdAndUpdate(id, data, { new: true }); // `new: true` returns the updated document
     }
+
+    static async getByMuscleGroup(muscleGroup) {
+        return ExerciseModel.find({ muscle_group: muscleGroup });
+    }
 }
 
 module.exports = Exercise;
