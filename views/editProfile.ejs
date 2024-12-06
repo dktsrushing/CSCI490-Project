@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edit Profile</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2>Edit Profile</h2>
+    <% if (error) { %>
+      <p class="error"><%= error %></p>
+    <% } %>
+    <form action="/profile/edit" method="POST" class="form-class">
+      <input type="text" name="username" value="<%= user.username %>" class="input-class" required />
+      <input type="password" name="currentPassword" placeholder="Current Password" class="input-class" />
+      <input type="password" name="newPassword" placeholder="New Password" class="input-class" />
+      <button type="submit" class="button-class">Update Profile</button>
+    </form>
+    <a href="/profile" class="button-class">Cancel</a>
+  </div>
+</body>
+</html>

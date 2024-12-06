@@ -6,7 +6,8 @@
 </head>
 <body>
   <div class="dashboard-container">
-    <h2>Welcome to your Dashboard</h2>
+    <h2>Welcome, <%= user.username %>!</h2>
+    <a href="/profile" class="button-class">View Profile</a>
     <a href="/logout" class="button-class">Logout</a>
   </div>
 </body>

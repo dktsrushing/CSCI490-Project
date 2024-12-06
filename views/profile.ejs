@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <div class="profile-container">
+    <h2>Your Profile</h2>
+    <p><strong>Username:</strong> <%= user.username %></p>
+    <a href="/profile/edit" class="button-class">Edit Profile</a>
+    <form action="/profile/delete" method="POST" onsubmit="return confirm('Are you sure you want to delete your account?');">
+      <button type="submit" class="button-class delete-button">Delete Account</button>
+    </form>
+    <a href="/dashboard" class="button-class">Back to Dashboard</a>
+  </div>
+</body>
+</html>
