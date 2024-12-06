@@ -14,13 +14,13 @@ describe('POST /api/exercises', () => {
         const response = await request(app)
             .post('/api/exercises')
             .send({
-                exercise_name: 'Test-Test-Test',
+                exercise_name: 'Test-Test-Test-Test',
                 muscle_group: 'Chest'
             });
 
         expect(response.statusCode).toBe(201);
         expect(response.body).toHaveProperty('_id');
-        expect(response.body.exercise_name).toBe('Test-Test-Test');
+        expect(response.body.exercise_name).toBe('Test-Test-Test-Test');
         expect(response.body.muscle_group).toBe('Chest');
     });
 });

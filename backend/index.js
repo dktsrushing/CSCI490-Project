@@ -3,6 +3,7 @@ const express = require('express');
 const mongoose = require('./db/connection'); // Database connection
 const exercisesRoute = require('./api/exercises');
 const workoutEntriesRoute = require('./api/workoutEntries');
+const workoutRoutes = require('./api/workouts');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -10,6 +11,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use('/api', exercisesRoute);
 app.use('/api', workoutEntriesRoute);
+app.use('/api', workoutRoutes);
 
 const server = app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
