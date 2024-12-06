@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { format, startOfWeek, addDays, isSameDay, isToday } from 'date-fns';
+import { format, startOfWeek, addDays, isSameDay, isToday, differenceInCalendarDays } from 'date-fns';
 import styled from 'styled-components';
 import './calendar.css'
 
@@ -54,10 +54,29 @@ const Calendar = () => {
   const startOfCurrentMonth = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1);
   const startOfCurrentWeek = startOfWeek(currentDate);
 
+   // Calculate the offset from the start of the week to today
+   const offset = differenceInCalendarDays(currentDate, startOfCurrentWeek);
+
   // handles sets/reps incrementing and toggling
   const [setsCount, setSetsCount] = useState(3);
   const [repsCount, setRepsCount] = useState(12);
   const [isToggled, setIsToggled] = useState(false); // New state to track toggle
+
+
+  const [dayCount, setDayCount] = useState(28); // Default number of days
+  const [inputDayCount, setInputDayCount] = useState(''); // User input for day count
+
+  // Function to handle day count update
+  const handleDayCountSubmit = (e) => {
+    e.preventDefault();
+    const parsedCount = parseInt(inputDayCount, 10);
+
+    if (!isNaN(parsedCount) && parsedCount > 0) {
+      setDayCount(parsedCount);
+    } else {
+      alert('Please enter a valid positive number');
+    }
+  };
 
   // Function to toggle values
   const toggleValues = () => {
@@ -73,7 +92,7 @@ const Calendar = () => {
 
   // Creates an array of days starting from the sunday of the current week
   const days = [...Array(dayCount)].map((_, index) => {
-    return addDays(startOfCurrentWeek, index);
+    return addDays(currentDate, index);
   });
 
   // Labels to organize columns into days of the week
@@ -102,11 +121,27 @@ const Calendar = () => {
       <button onClick={toggleValues}>
         {isToggled ? 'Revert' : 'Increment'} {/* Toggle button label */}
       </button>
+      <form onSubmit={handleDayCountSubmit}>
+        <label htmlFor="dayCountInput">Number of days to plan:</label>
+        <input
+          id="dayCountInput"
+          type="number"
+          value={inputDayCount}
+          onChange={(e) => setInputDayCount(e.target.value)}
+        />
+        <button type="submit">Submit</button>
+      </form>
       <CalendarWrapper> 
         {/* Maps labels sun-sat to display which day of the week corresponds to each column of days */}
         {dayLabels.map((label, index) => (
           <DayHeader key={index}>{label}</DayHeader>
         ))}
+
+        {/* Render blank placeholders for days before today */}
+        {[...Array(offset)].map((_, index) => (
+          <div key={`placeholder-${index}`} style={{ background: 'transparent' }}></div>
+        ))}
+
         {days.map((day, index) => (
           <Day
             key={day}
@@ -160,7 +195,7 @@ const Calendar = () => {
                  } else if (index >= 13 && index <= 20) {
                    displayRepsCount = 12;
                  }
-                 
+
                  return (
                    <>
                      {[...Array(3)].map((_, i) => (

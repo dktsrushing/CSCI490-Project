@@ -27,3 +27,7 @@ select {
     width: 140px;
 }
 
+label{
+    padding-top: 10px;
+    font-weight: bold;
+}
