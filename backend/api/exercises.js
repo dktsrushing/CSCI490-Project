@@ -1,17 +1,11 @@
-// api/exercises.js
 const express = require('express');
 const router = express.Router();
-const Exercise = require('../models/Exercise');
+const exerciseController = require('../controllers/exerciseController');
 
-// GET /exercises - Fetch all exercises
-router.get('/exercises', async (req, res) => {
-    try {
-        const exercises = await Exercise.find();
-        res.json(exercises);
-    } catch (err) {
-        console.error(err);
-        res.status(500).json({ message: 'Error fetching exercises' });
-    }
-});
+router.get('/exercises/muscle_group/:muscleGroup', exerciseController.getExercisesByMuscleGroup);
+router.get('/exercises', exerciseController.getExercises);
+router.post('/exercises', exerciseController.createExercise);
+router.delete('/exercises/:id', exerciseController.deleteExercise);
+router.put('/exercises/:id', exerciseController.updateExercise);
 
 module.exports = router;

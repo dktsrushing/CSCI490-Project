@@ -3,5 +3,11 @@
     "mysql": "^2.18.1",
     "pg": "^8.13.0",
     "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run start --prefix backend\" \"npm run start --prefix frontend\""
   }
 }
